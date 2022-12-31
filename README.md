@@ -1,7 +1,5 @@
 # Predict Customer Churn With PySpark
 
-
-
 ## Table of Contents
 
 - [Predict Customer Churn With PySpark](#predict-customer-churn-with-pyspark)
