@@ -5,6 +5,19 @@ from ast import literal_eval
 
 # function the cells above
 def get_genres(df):
+    '''This function takes a dataframe and returns a dataframe of genres
+    param df: a dataframe
+    return: a dataframe of genres
+    
+    Rationale:
+    Basically it's a messy function to get the genres from the tag-list column.
+    The musicbrainz api returned nested json but it was malformed.
+    So I had to use literal_eval to convert the string to a list.
+    Then I used the explode method to explode the list into rows.
+    Then I used the json_normalize method to normalize the json.
+    
+    Yes, sorry for giving you a headache. It took 3 days to figure this out. And now
+    I'm so afraif to touch it :D '''
     # drop nans from tag-list column
     df = df.dropna(subset=['tag-list'])
     df['tag-list'] = df['tag-list'].apply(literal_eval) #convert to list type
