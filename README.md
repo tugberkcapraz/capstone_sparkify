@@ -18,7 +18,12 @@ This projects aims to predict customer churn with PySpark based on the dataset p
 The two main goals of this project are as follows:
 1) Exploring the relationgship between the variables in the user log and their churning behavior.
 2) Provide a model that can predict the churning behavior of the users.
-   
+<br>
+<br>
+>>The associated medium article can be found here
+[here](https://medium.com/@keremtuberkapraz/predicting-customer-churn-using-pyspark-f9705f5592cf)
+
+<br>
 The project is built on `PySpark` and `pandas`. The data is loaded into `Spark` and then, the data is processed together with `pandas`. For certain operations `numpy` library is used. The data is then visualized with `matplotlib` and `seaborn`.
 
 The model is built with `pySpark ML` and `imbalanced-learn`. The model is then evaluated with `pySpark ML` and `sklearn`.
@@ -179,3 +184,5 @@ In terms of evaluating the problem statement I declared on top of the file,
  So, for better generalizations we need to understand the data generating mechanism. This implies causal ML domain and I have no expertise on that matter. 
   <br><br>
  
+
+
