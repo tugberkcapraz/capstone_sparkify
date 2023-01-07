@@ -18,8 +18,9 @@ This projects aims to predict customer churn with PySpark based on the dataset p
 The two main goals of this project are as follows:
 1) Exploring the relationgship between the variables in the user log and their churning behavior.
 2) Provide a model that can predict the churning behavior of the users.
+
 <br>
-<br>
+
 >>The associated medium article can be found here
 [here](https://medium.com/@keremtuberkapraz/predicting-customer-churn-using-pyspark-f9705f5592cf)
 
