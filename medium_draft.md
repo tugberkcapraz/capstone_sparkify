@@ -82,4 +82,11 @@ clustering.ipynb: So far we have created the genres.csv for 20% of the artists t
 2. Join genres.csv to our original dataframe. For non-matching artists the way is to merge is to assign 0s to each genre column.
 3. Create the label column. The label column is the churn column. If a user has visited the cancellation confirmation page, it means that the user has churned. So I created a label column where 1 means churn and 0 means not churn.
 
-
+Model | Tuned | Smote Applied | F-1 Score
+--- | --- | --- | --- 
+**Random Forest** | NO | NO | 0.97
+**Random Forest** | NO | NO | 0.97
+**Logistic Regression** | NO | YES | 0.67
+**Logistic Regression** | YES | YES | 0.81
+**Support Vector Machine** | NO | YES | 0.82
+**Support Vector Machine** | YES | YES | 0.82
